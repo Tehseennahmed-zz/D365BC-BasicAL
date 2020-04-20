@@ -1,13 +1,14 @@
-pageextension 91007 "Social Media Card" extends "Customer Card"
+pageextension 91004 "Social Media Card" extends "Customer Card"
 {
+
     layout
     {
         addafter(General)
         {
-            field("Facebook"; "Facebook") { }
-            field("Twitter"; "Twitter") { }
-            field("Instagram"; "Instagram") { }
-            field("LinkedIn"; "LinkedIn") { }
+            field("Facebook"; "Facebook") { ApplicationArea = All; }
+            field("Twitter"; "Twitter") { ApplicationArea = All; }
+            field("Instagram"; "Instagram") { ApplicationArea = All; }
+            field("LinkedIn"; "LinkedIn") { ApplicationArea = All; }
 
         }
     }

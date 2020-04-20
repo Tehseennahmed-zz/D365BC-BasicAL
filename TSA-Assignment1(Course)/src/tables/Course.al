@@ -41,17 +41,17 @@ table 91001 Course
         {
 
         }
-        field(100; InstructorCode; Code[20])
+        field(100; "Instructor Code"; Code[20])
         {
             TableRelation = Resource where(Type = CONST(Person));
 
         }
 
-        field(110; InstructorName; Text[50])
+        field(110; "Instructor Name"; Text[50])
         {
             Editable = false;
             FieldClass = FlowField;
-            CalcFormula = lookup (Resource.Name where("No." = field(InstructorCode)));
+            CalcFormula = lookup (Resource.Name where("No." = field("Instructor Code")));
         }
     }
 
@@ -61,7 +61,7 @@ table 91001 Course
         {
             Clustered = true;
         }
-        key(Secondarykey1; InstructorCode)
+        key(Secondarykey1; "Instructor Code")
         {
         }
         key(Secondarykey2; Type)

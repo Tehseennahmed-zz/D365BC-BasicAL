@@ -7,13 +7,13 @@
       "name": "Microsoft cloud sandbox",
       "server": "https://businesscentral.dynamics.com/",
       "tenant": "cd620cf8-cba4-4934-9914-1e85ec0e639d",
-      "startupObjectId": 91003,
+      "startupObjectId": 91002,
       "startupObjectType": "Page",
       "breakOnError": true,
       "launchBrowser": true,
       "enableLongRunningSqlStatements": true,
       "enableSqlInformationDebugger": true,
-      "schemaUpdateMode": "Recreate"
+      "schemaUpdateMode": "Synchronize"
     }
   ]
 }
